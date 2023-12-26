@@ -76,6 +76,6 @@ function changeSpeed(value) {
 }
 // Initialize the grid when the page loads
 window.onload = function () {
-  grid = Array.from({ length: 50 }, () => Array(100).fill(0));
+  grid = Array.from({ length: 50 }, () => Array(50).fill(0));
   initializeGrid();
 };
