@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conway's Game of life</title>
+</head>
+<body>
+    <div id="grid-container"></div>
+    <div class="buttons">
+    <span class="speedlabel">Speed</span>
+    <input class="speed" onchange="changeSpeed(this.value)" type="range" min="1" max="100" value="50">
+    <button class="next" onclick="nextGen()">NextGen</button>
+    <button class="play" onclick="start();">Play</button>
+    <button class="pause" onclick="playing = false">Pause</button>
+    <button class="reset" onclick="reset();">Reset</button>
+    <button class="clear" onclick="grid = Array.from({ length: 50 }, () => Array(100).fill(0)); updateGridUI();">Clear</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

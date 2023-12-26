@@ -1,0 +1,31 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(100, 30px);
+    grid-template-rows: repeat(50, 30px);
+    gap: 1px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.buttons{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 90vh;
+}
+.speed{
+    display: inline-flexbox;
+}
+button{
+    width: 125px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+span{
+    font-size: 25px;
+}
