@@ -1,3 +1,7 @@
+body{
+    max-zoom: 50%;
+    min-zoom: 50%;
+}
 #grid-container {
     display: grid;
     grid-template-columns: repeat(100, 30px);
